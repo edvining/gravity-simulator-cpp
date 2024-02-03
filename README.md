@@ -14,3 +14,16 @@ object1.v = {0, 2, 2};     // velocity
 Calculate the forces between objects using the Gravitational Force equation:
 
 $$F=\frac{GMm}{r^2}$$
+
+Apply the force from all other objects to get the total force:
+
+```c++
+for(int i = 0; i < numOfObjects; i++)
+{
+        for(int j = 0; j < numOfObjects; j++)
+        {
+                force += (G * object1.mass * object2.mass) / (distance * distance);
+        }
+        object1.a = force / object1.mass
+}
+```
