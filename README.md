@@ -4,7 +4,7 @@ Creating an N-body gravity simulator in C++, with OpenGL and Vulkan visualisatio
 ## Basic Gravity Simulation
 
 Creating objects with attributes:
-```
+```c++
 PhysicsObject object1;
 object1.mass = 10;         // kg
 object1.p = {0, 0, 10};    // position
